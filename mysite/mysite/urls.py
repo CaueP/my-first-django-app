@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    # Adding polls URL to your "router"
     url(r'^polls/', include('polls.urls')),
 ]
